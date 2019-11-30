@@ -4,7 +4,7 @@
 
 Todos los programas que se necesitan para ejecutar el código se encuentra en la [página oficial de Haskell.](https://www.haskell.org/platform/)
 
-Para ejecutar el código lo unico que debemos hacer es copiar el código de alguno de los ejemplos y dejarlo en un archivo con extension _.hs_, ir a la consola, movernos hasta la carpeta donde se encuenta nuestro archivo y ejecutar:
+Para ejecutar el código lo unico que debemos hacer es copiar el código de alguno de los ejemplos y dejarlo en un archivo con extensión _.hs_, ir a la consola, movernos hasta la carpeta donde se encuenta nuestro archivo y ejecutar:
 ```
 ghci
 :l archivo.hs
@@ -23,7 +23,7 @@ Cuando nos aparezca **\*Main>** en la consola lo que debemos escribir es:
 ```Haskell
 positivos [1,2,-3,0,4,-10]
 ```
-El resultado sera:
+El resultado será:
 ```Haskell
 [-3,-10]
 ```
