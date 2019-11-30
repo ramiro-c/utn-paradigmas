@@ -2,14 +2,14 @@
 
 ### Material realizado en la materia Paradigmas de programación | UTN - FRLP
 
-Todos los programas que se necesitan para ejecutar el código se encuentra en la [página oficial de Haskell.](https://www.haskell.org/platform/)
+Todos los programas que se necesitan para ejecutar el código se encuentran en la [página oficial de Haskell.](https://www.haskell.org/platform/)
 
 Para ejecutar el código lo unico que debemos hacer es copiar el código de alguno de los ejemplos y dejarlo en un archivo con extensión _.hs_, ir a la consola, movernos hasta la carpeta donde se encuenta nuestro archivo y ejecutar:
 ```
 ghci
 :l archivo.hs
 ```
-Y luego lo que debemos hacer es escribir el nombre de la función que tenga el código que hayas copiado pasandole como argumento lo que corresponda, por ejemplo:
+Y luego lo que debemos hacer es escribir el nombre de la función que tenga el código que hayas copiado pasándole como argumento lo que corresponda, por ejemplo:
 
 ```Haskell
 -- Este seria un ejemplo de codigo en Haskell
