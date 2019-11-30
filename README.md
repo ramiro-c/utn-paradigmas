@@ -28,7 +28,7 @@ El resultado sera:
 [-3,-10]
 ```
 ---
-**A continuación se encuentra una lista de ejemplos sencillos que se asimilan a la practica de la materia, con el tiempo iré agregando mas.**
+**A continuación se encuentra una lista de ejemplos sencillos que se asimilan a la práctica de la materia, con el tiempo iré agregando más.**
 
 **Ejemplo 1**
 ```Haskell
