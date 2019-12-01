@@ -4,7 +4,7 @@
 
 Todos los programas que se necesitan para ejecutar el código se encuentran en la [página oficial de Haskell.](https://www.haskell.org/platform/)
 
-Para ejecutar el código lo unico que debemos hacer es copiar el código de alguno de los ejemplos y dejarlo en un archivo con extensión _.hs_, ir a la consola, movernos hasta la carpeta donde se encuenta nuestro archivo y ejecutar:
+Para ejecutar el código lo unico que debemos hacer es copiar el código de alguno de los ejemplos y dejarlo en un archivo con extensión _.hs_, abrir la consola de comandos, movernos hasta la carpeta donde se encuenta nuestro archivo y ejecutar:
 ```
 ghci
 :l archivo.hs
