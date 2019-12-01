@@ -1,4 +1,4 @@
-# Repositorio utn-paradigmas
+# Repositorio utn-paradigmas-funcional
 
 ### Material realizado en la materia Paradigmas de programación | UTN - FRLP
 
