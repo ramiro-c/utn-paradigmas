@@ -53,3 +53,15 @@ obtenerMenor :: [Int] -> Int
 obtenerMenor [x] = x
 obtenerMenor (x:xs) | (x <= obtenerMenor xs) = x
                     | otherwise = obtenerMenor xs
+
+-- Remueve el menor numero de una lista
+removerMenor :: [Int] -> [Int]
+removerMenor [] = []
+removerMenor (x:xs) | (x == (obtenerMenor (x:xs))) = xs
+                    | otherwise = x:removerMenor xs
+
+-- Uso del if
+-- Retorna True si el numero es par, en caso contrario
+-- retorna False
+ifPar :: Int -> Bool
+ifPar num = if (mod num 2 == 0) then True else False

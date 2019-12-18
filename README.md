@@ -28,7 +28,7 @@ El resultado será:
 [-3,-10]
 ```
 ---
-**A continuación se encuentra una lista de ejemplos sencillos que se asimilan a la práctica de la materia, con el tiempo iré agregando más.**
+**A continuación se encuentra una lista de ejemplos que se asimilan a la práctica de la materia.**
 
 **Ejemplo 1**
 ```Haskell
@@ -55,34 +55,42 @@ contarElementos (x:xs) = 1 + contarElementos xs
 ```
 **Ejemplo 4**
 ```Haskell
+-- Uso del if
+-- Retorna True si el numero es par, en caso contrario
+-- retorna False
+ifPar :: Int -> Bool
+ifPar num = if (mod num 2 == 0) then True else False
+```
+**Ejemplo 5**
+```Haskell
 -- Cuenta solo los elementos pares de una lista
 contarElementosPares :: [Int] -> Int
 contarElementosPares [] = 0
 contarElementosPares (x:xs) | (mod x 2 == 0) = 1 + contarElementosPares xs
                             | otherwise = contarElementosPares xs
 ```
-**Ejemplo 5**
+**Ejemplo 6**
 ```Haskell
 -- Invierte todos los elementos de una lista
 invertirLista:: [alpha] -> [alpha]
 invertirLista [] = []
 invertirLista (x:xs) = invertirLista xs ++ [x]
 ```
-**Ejemplo 6**
+**Ejemplo 7**
 ```Haskell
 -- Compuerta logica and
 myAnd :: Bool -> Bool -> Bool
 myAnd True x = x 
 myAnd False x = False
 ```
-**Ejemplo 7**
+**Ejemplo 8**
 ```Haskell
 -- Compuerta logica or
 myOr :: Bool -> Bool -> Bool
 myOr True x = True
 myOr False x = x
 ```
-**Ejemplo 8**
+**Ejemplo 9**
 ```Haskell
 -- Devuelve el valor absoluto de cada elemento de la lista
 valorAbsoluto :: [Int] -> [Int]
@@ -90,7 +98,7 @@ valorAbsoluto [] = []
 valorAbsoluto (x:xs) | (x >= 0) = x:valorAbsoluto xs
                      | otherwise = -x:valorAbsoluto xs
 ```
-**Ejemplo 9**
+**Ejemplo 10**
 ```Haskell
 -- Devuelve la suma de los numeros impares de la lista                     
 sumaImpares :: [Int] -> Int
@@ -98,13 +106,22 @@ sumaImpares [] = 0
 sumaImpares (x:xs) | (mod x 2 /= 0) = x + sumaImpares xs
                    | otherwise = sumaImpares xs
 ```
-**Ejemplo 10**
+**Ejemplo 11**
 ```Haskell
 -- Devuelve el menor numero de una lista
 obtenerMenor :: [Int] -> Int
 obtenerMenor [x] = x
 obtenerMenor (x:xs) | (x <= obtenerMenor xs) = x
                     | otherwise = obtenerMenor xs
+```
+**Ejemplo 12**
+```Haskell
+-- Remueve el menor numero de una lista utilizando
+-- la funcion obtenerMenor del ejemplo 11
+removerMenor :: [Int] -> [Int]
+removerMenor [] = []
+removerMenor (x:xs) | (x == (obtenerMenor (x:xs))) = xs
+                    | otherwise = x:removerMenor xs
 ```
 ---
 **Autor**
